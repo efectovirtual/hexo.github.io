@@ -1,0 +1,61 @@
+# Header
+menu:
+  Inicio: /
+  Archivos: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+img: /img/
+
+
+title: Alberto Blog
+subtitle: Practicando con Hexo
+description: Este es un ejemplo pequeño trabajando con bootstrap
+author: Alberto Rodriguez Diaz
+language: es
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://efectovirtual.github.io/hexo.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+theme: albertoHexo
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: https://github.com/efectovirtual/hexo.github.io
+branch: master

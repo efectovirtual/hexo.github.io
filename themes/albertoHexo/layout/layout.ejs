@@ -1,0 +1,29 @@
+<%- partial('_partial/head') %>
+<body>
+<%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+
+<div class="container-fluid wrapbody">
+<div class="row">
+    
+        <div class="col-md-9">
+          <section><%- body %></section>
+        </div>
+
+        <div class="col-md-3">
+          <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+          <% } %>
+        </div>
+
+</div>
+</div>
+
+<div class="container-fluid">
+        <div class="row">
+            <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+        </div>
+</div>
+
+
+</body>
+</html>
